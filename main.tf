@@ -8,13 +8,13 @@
 #}
 ################################
 #Attach the S3 Bucket as Backend
-terraform {
-  backend "s3" {
-    bucket = "mirastate"
-    key    = "myapp/dev/terraform.tfstate"
-    region = "us-east-1"
-  }
-}
+#terraform {
+ # backend "s3" {
+  #  bucket = "mirastate"
+   # key    = "myapp/dev/terraform.tfstate"
+    #region = "us-east-1"
+  #}
+#}
 ###########################################
 # Set the region to deploy to
 provider "aws" {
