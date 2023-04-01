@@ -15,7 +15,7 @@ pipeline {
     stage('IAC Code Quality Check') {
       steps {
         sh '''sonar-scanner \\
-  -Dsonar.projectKey=MIRA-IAC \\
+  -Dsonar.projectKey=izac \\
   -Dsonar.sources=. \\
   -Dsonar.host.url=http://34.202.247.19:9000 \\
   -Dsonar.login=sqp_9eb7212aa3afce8cb1ef705bbba2e55b626888a3'''
